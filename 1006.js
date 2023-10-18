@@ -6,12 +6,18 @@ const quebraLinhaWindows = '\r\n'
 let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 //->
-let a ;
-let b ;
+let a = lines.shift();
+let b = lines.shift();
+let c = lines.shift();
 
-a = parseInt(lines[0]);
-b = parseInt(lines[1]);
+a = parseFloat(a);
+b = parseFloat(b);
+c = parseFloat(c);
 
-let x = a + b;
+let pesoA = 2;
+let pesoB = 3;
+let pesoC = 5;
 
-console.log("X = " + x);
+const media = (a * pesoA + b * pesoB + c * pesoC) / (pesoA + pesoB + pesoC);
+
+console.log("MEDIA = " + media.toFixed(1));

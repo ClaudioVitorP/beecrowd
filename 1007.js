@@ -6,12 +6,11 @@ const quebraLinhaWindows = '\r\n'
 let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 //->
-let a ;
-let b ;
+let a = lines.shift();
+let b = lines.shift();
+let c = lines.shift();
+let d = lines.shift();
 
-a = parseInt(lines[0]);
-b = parseInt(lines[1]);
+let diferenca = (a * b - c * d);
 
-let x = a + b;
-
-console.log("X = " + x);
+console.log("DIFERENCA = " + diferenca);

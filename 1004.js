@@ -6,12 +6,12 @@ const quebraLinhaWindows = '\r\n'
 let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 //->
-let a ;
-let b ;
+let a;
+let b;
 
 a = parseInt(lines[0]);
 b = parseInt(lines[1]);
 
-let x = a + b;
+let PROD = a * b;
 
-console.log("X = " + x);
+console.log("PROD = " + PROD );

@@ -6,12 +6,11 @@ const quebraLinhaWindows = '\r\n'
 let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 //->
-let a ;
-let b ;
+let r = lines.shift();
+const pi = 3.14159;
+let cubo = (r * r * r).toFixed(3);
 
-a = parseInt(lines[0]);
-b = parseInt(lines[1]);
+let volume = (4/3) * pi * cubo;
 
-let x = a + b;
 
-console.log("X = " + x);
+console.log("VOLUME = " + volume.toFixed(3));

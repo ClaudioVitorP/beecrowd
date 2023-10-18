@@ -6,12 +6,12 @@ const quebraLinhaWindows = '\r\n'
 let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 //->
-let a ;
-let b ;
+let numeroFormulario = lines.shift();
+let horasTrabalhadas = lines.shift();
+let valorPorHora = lines.shift();
 
-a = parseInt(lines[0]);
-b = parseInt(lines[1]);
 
-let x = a + b;
+let salario = (horasTrabalhadas * valorPorHora);
 
-console.log("X = " + x);
+
+console.log("NUMBER = " + numeroFormulario + "\nSALARY = U$ " + salario.toFixed(2));

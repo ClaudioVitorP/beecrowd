@@ -6,12 +6,11 @@ const quebraLinhaWindows = '\r\n'
 let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 //->
-let a ;
-let b ;
+let nome = lines.shift();
+let salarioFixo = parseFloat(lines.shift());
+let totalDeVendas = parseFloat(lines.shift());
 
-a = parseInt(lines[0]);
-b = parseInt(lines[1]);
+let comissao = (15/100) * totalDeVendas;
+let totalReceber = salarioFixo + comissao;
 
-let x = a + b;
-
-console.log("X = " + x);
+console.log("TOTAL = R$ " + totalReceber.toFixed(2));
